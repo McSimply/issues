@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 📖 Documentation
+    url: https://github.com/McSimply/issues/wiki
+    about: Check the wiki for documentation and guides
+  - name: 💬 Discussions
+    url: https://github.com/McSimply/issues/discussions
+    about: Join community discussions and chat with other users
