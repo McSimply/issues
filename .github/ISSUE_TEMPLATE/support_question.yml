@@ -1,0 +1,70 @@
+name: Support Question
+description: Ask for help or support with using a mod
+title: "[Support] "
+labels: ["question", "support"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reaching out for support! Please provide as much detail as possible to help us assist you.
+  
+  - type: dropdown
+    id: mod
+    attributes:
+      label: Which mod do you need help with?
+      description: Select the mod you have a question about
+      options:
+        - Simple Voice Chat Group Player Names
+      default: 0
+    validations:
+      required: true
+  
+  - type: input
+    id: mod-version
+    attributes:
+      label: Mod Version
+      description: What version of the mod are you using?
+      placeholder: "e.g., 1.0.0"
+    validations:
+      required: true
+  
+  - type: input
+    id: minecraft-version
+    attributes:
+      label: Minecraft Version
+      description: What version of Minecraft are you running?
+      placeholder: "e.g., 1.20.1"
+    validations:
+      required: true
+  
+  - type: input
+    id: mod-loader
+    attributes:
+      label: Mod Loader
+      description: Which mod loader are you using?
+      placeholder: "e.g., Forge, Fabric, NeoForge"
+    validations:
+      required: true
+  
+  - type: textarea
+    id: question
+    attributes:
+      label: Your Question
+      description: What do you need help with?
+      placeholder: Clearly describe what you need help with...
+    validations:
+      required: true
+  
+  - type: textarea
+    id: what-tried
+    attributes:
+      label: What Have You Tried?
+      description: What have you already attempted to solve this issue?
+      placeholder: Describe what you've already tried...
+  
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: Additional Context
+      description: Add any other context, screenshots, or configuration details
+      placeholder: Any other information that might be helpful...

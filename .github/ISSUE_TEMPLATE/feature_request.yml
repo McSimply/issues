@@ -1,0 +1,61 @@
+name: Feature Request
+description: Suggest a new feature or enhancement for a mod
+title: "[Feature] "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for suggesting a feature! Please fill out the information below to help us understand your idea.
+  
+  - type: dropdown
+    id: mod
+    attributes:
+      label: Which mod is this feature for?
+      description: Select the mod you want this feature added to
+      options:
+        - Simple Voice Chat Group Player Names
+      default: 0
+    validations:
+      required: true
+  
+  - type: textarea
+    id: feature-description
+    attributes:
+      label: Feature Description
+      description: Clearly describe the feature you'd like to see
+      placeholder: Describe your feature idea in detail...
+    validations:
+      required: true
+  
+  - type: textarea
+    id: problem-solved
+    attributes:
+      label: Problem or Use Case
+      description: What problem does this feature solve? How would it be used?
+      placeholder: Explain the problem this feature would solve or the use case it would enable...
+    validations:
+      required: true
+  
+  - type: textarea
+    id: proposed-solution
+    attributes:
+      label: Proposed Solution
+      description: How do you envision this feature working?
+      placeholder: Describe how you think this feature should work...
+    validations:
+      required: true
+  
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives Considered
+      description: Have you considered any alternative solutions or workarounds?
+      placeholder: Describe any alternative solutions or features you've considered...
+  
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: Additional Context
+      description: Add any other context, mockups, or screenshots about the feature request
+      placeholder: Any other information that might be helpful...
