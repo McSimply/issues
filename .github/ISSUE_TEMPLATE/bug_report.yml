@@ -15,6 +15,7 @@ body:
       description: Select the mod that has the bug
       options:
         - Simple Voice Chat Group Player Names
+        - InstaPack
       default: 0
     validations:
       required: true
